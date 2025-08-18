@@ -65,9 +65,8 @@
   }
 
   .socialmedias__box-icon {
-    color: #fff;
-    font-size: 4rem;
     transition: all 0.4s ease;
+    width: 3.4rem;
   }
   .socialmedias__box-icon-content:hover .socialmedias__box-icon {
     transform: scale(1.2);
