@@ -1,0 +1,105 @@
+@import url(./default.css);
+@import url(./font.css);
+@import url(./variables.css);
+
+.header {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.header__img-content {
+  position: relative;
+  max-width: 100%;
+  height: 80vh;
+  padding: 0;
+}
+
+.header__img-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.header__title {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: clamp(1.8rem, 4vw, 4rem);
+  top: 60%;
+  color: #98153f;
+  font-weight: bold;
+}
+
+
+/*** start icon box */
+.all__socialmedias__box-content {
+  bottom: 4.5rem;
+}
+
+.all__socialmedias__box-content {
+  .socialmedias__box {
+    height: 14rem;
+    position: relative;
+  }
+
+  .socialmedias__box-icon-content {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .socialmedias__box:nth-child(1) .socialmedias__box-icon-content {
+    background: linear-gradient(135deg, #018eb6, #0072ff);
+  }
+
+  .socialmedias__box:nth-child(2) .socialmedias__box-icon-content {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+  }
+  .socialmedias__box:nth-child(3) .socialmedias__box-icon-content {
+    background: linear-gradient(135deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  }
+
+  .socialmedias__box:nth-child(4) .socialmedias__box-icon-content {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+  }
+
+  .socialmedias__box-icon {
+    color: #fff;
+    font-size: 4rem;
+    transition: all 0.4s ease;
+  }
+  .socialmedias__box-icon-content:hover .socialmedias__box-icon {
+    transform: scale(1.2);
+  }
+
+  .socialmedias__box-text-content__title {
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .socialmedias__box-text-content__description {
+    font-size: 1.1rem;
+  }
+  .socialmedias__box-icon-link {
+    position: absolute;
+    left: 50%;
+    bottom: 10rem;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+}
+
+
+
+/* ??Responsive */
+
+@media screen and (max-width: 515px) {
+  .header__img-content {
+    height: 55vh;
+  }
+}
