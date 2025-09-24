@@ -1,0 +1,61 @@
+@import url(./default.css);
+@import url(./font.css);
+@import url(./variables.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-image: linear-gradient(207deg, #c50d0daa, #4181b0); */
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+#container {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-image: linear-gradient(207deg, #c50d0daa, #4181b0);
+}
+
+.code-box-content {
+  background: #61186f33;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-inline: 1rem;
+}
+
+.code-content__lable-input{
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:  space-between;
+}
+
+.code-content__lable{
+  font-size: clamp(1.1rem,1.4vw,2.5rem);
+}
+
+.code-input{
+  outline: none;
+}
